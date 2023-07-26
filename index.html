@@ -20,9 +20,9 @@
   </head>
   <body>
     <!-- header -->
-    <header class="max-w-screen-xl text-center md:mx-20">
+    <header class="max-w-screen-xl md:mx-20">
       <nav
-        class=" flex flex-col items-center gap-4 md:flex-row md:justify-between md:items-center  md:bg-[#F85559] md:rounded-full px-4 py-3 md:text-white"
+        class="flex flex-col items-center gap-4 md:flex-row md:justify-between md:items-center md:bg-[#F85559] md:rounded-full px-4 py-3 md:text-white"
       >
         <div class="">
           <ul class="flex gap-8 capitalize">
@@ -36,7 +36,7 @@
           <img class="mr-1" src="images/logo.png" alt="logo" />
           <span class="text-md font-bold">Fruit Burst</span>
         </div>
-        <div class="rounded-full p-2 bg-[#F85559]  md:bg-white text-black">
+        <div class="rounded-full p-2 bg-[#F85559] md:bg-white text-black">
           <input
             class="rounded-full border-none outline-none pl-2"
             name="Search"
@@ -53,12 +53,13 @@
     <!-- main -->
     <main>
       <!-- section hero -->
-      <section class="max-w-screen-xl mx-20 mt-10">
+      <section class="max-w-screen-xl md:mx-20 mt-10 relative">
+        <!-- banner -->
         <div
           class="hero rounded-lg"
           style="background-image: url(./images/banner4.png)"
         >
-          <div class="hero-overlay  rounded-lg"></div>
+          <div class="hero-overlay rounded-lg"></div>
           <div class="hero-content text-center h-[400px] text-white">
             <div class="">
               <h1 class="mb-5 text-5xl font-bold">
@@ -72,6 +73,198 @@
                 shop now
               </button>
             </div>
+          </div>
+          <!-- banner tiny images container -->
+          <div
+            class="hidden md:flex md:w-10/12 mx-auto justify-around absolute -bottom-12 bg-slate-100 rounded-lg"
+          >
+            <img src="./images/fruit1.png" alt="" /><img
+              src="./images/fruit2.png"
+              alt=""
+            /><img src="./images/fruit3.png" alt="" /><img
+              src="./images/fruit4.png"
+              alt=""
+            /><img src="images/fruit5.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- section rating -->
+      <section class="max-w-screen-xl md:mx-20 md:my-36">
+        <div class="flex justify-between">
+          <div class="max-w-md">
+            <h2 class="text-4xl font-extrabold mb-6">Deal of the day</h2>
+            <p>
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <div class="flex gap-8">
+            <div class="border-r pr-2 border-black border-dotted">
+              <h3 class="text-4xl font-extrabold mb-6">29</h3>
+              <p>Days</p>
+            </div>
+            <div class="border-r pr-2 border-black border-dotted">
+              <h3 class="text-4xl font-extrabold mb-6">15</h3>
+              <p>Hours</p>
+            </div>
+            <div class="border-r pr-2 border-black border-dotted">
+              <h3 class="text-4xl font-extrabold mb-6">25</h3>
+              <p>Min</p>
+            </div>
+            <div class="border-r pr-2 border-black border-dotted">
+              <h3 class="text-4xl font-extrabold mb-6">28</h3>
+              <p>Sec</p>
+            </div>
+          </div>
+        </div>
+        <!-- container card -->
+        <div class="grid gap-4 grid-cols-4 mt-12">
+          <div class="flex flex-col gap-4 items-center h-96 shadow my-4">
+            <img class="w-24 mb-5" src="images/fruit7.png" alt="fruit-apple" />
+            <p class="mb-4 text-2xl font-bold">12.90$ - 18.85$</p>
+            <div class="w-10/12 h-[2px] bg-[#1212121a]"></div>
+            <p class="mb-4">Apples</p>
+
+            <div class="rating mb-4">
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-[#F85559]"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-[#F85559]"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-[#F85559]"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-[#F85559]"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-[#F85559]"
+              />
+            </div>
+            <p>Details</p>
+          </div>
+          <div class="flex flex-col gap-4 items-center h-96 shadow my-4">
+            <img class="w-24 mb-5" src="images/fruit7.png" alt="fruit-apple" />
+            <p class="mb-4 text-2xl font-bold">12.90$ - 18.85$</p>
+            <div class="w-10/12 h-[2px] bg-[#1212121a]"></div>
+            <p class="mb-4">Apples</p>
+
+            <div class="rating mb-4">
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-[#F85559]"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-[#F85559]"
+                
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-[#F85559]"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-[#F85559]"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-[#F85559]"
+              />
+            </div>
+            <p>Details</p>
+          </div>
+          <div class="flex flex-col gap-4 items-center h-96 shadow my-4">
+            <img class="w-24 mb-5" src="images/fruit8.png" alt="fruit-apple" />
+            <p class="mb-4 text-2xl font-bold">12.90$ - 18.85$</p>
+            <div class="w-10/12 h-[2px] bg-[#1212121a]"></div>
+            <p class="mb-4">Apples</p>
+
+            <div class="rating mb-4">
+              <input
+                type="radio"
+                name="rating-2"
+            class="mask mask-star-2 bg-[#F85559]"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+            class="mask mask-star-2 bg-[#F85559]"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-2"
+            class="mask mask-star-2 bg-[#F85559]"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+            class="mask mask-star-2 bg-[#F85559]"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+            class="mask mask-star-2 bg-[#F85559]"
+              />
+            </div>
+            <p>Details</p>
+          </div>
+          <div class="flex flex-col gap-4 items-center h-96 shadow my-4">
+            <img class="w-24 mb-5" src="images/fruit9.png" alt="fruit-apple" />
+            <p class="mb-4 text-2xl font-bold">12.90$ - 18.85$</p>
+            <div class="w-10/12 h-[2px] bg-[#1212121a]"></div>
+            <p class="mb-4">Apples</p>
+
+            <div class="rating mb-4">
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-[#F85559]"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-[#F85559]"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-[#F85559]"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-[#F85559]"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-[#F85559]"
+              />
+            </div>
+            <p>Details</p>
           </div>
         </div>
       </section>
